@@ -14,6 +14,27 @@ let button = document.querySelector(".button"); // нашла кнопку "ра
 let carOwner = document.querySelector(".carOwner"); // нашла див с количеством владельцев
 
 
+function addcarOwner(){ //проверяем условие если авто поддержанное то появляются родиокнопки и количеством владельцев
+
+if(elemSuppСar.value !=="") 
+{
+    const newCarOwner = `<div><p>1-2 владельца</p><input type="radio"></div>`;
+    const toCarOwner = `<div><p>3 и более владельцев</p><input type="radio"></div>`;
+    carOwner.insertAdjacentHTML('beforeEnd', newCarOwner);
+    carOwner.insertAdjacentHTML('beforeEnd', toCarOwner);
+}
+}
+elemSuppСar.addEventListener('input', function (evt) {
+    evt.preventDefault();
+    addcarOwner();
+  });
+
+
+
+
+
+
+
 
 
 
