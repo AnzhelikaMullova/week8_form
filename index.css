@@ -1,0 +1,16 @@
+.myform{
+    width: 35vw ;
+    border: 1px solid red;
+    border-radius: 4px;
+}
+
+.title{
+    background-color: red;
+    font-size: 30px;
+    color: antiquewhite;
+}
+
+.carBrend{
+    display: flex;
+    justify-content: space-around;
+}

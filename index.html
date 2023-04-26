@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="myform">
+        <h1 class="title">Калькулятор стоимости автомобиля</h1>
+        <form name="form" class="form">
+            <div>
+                <label for="carBrend">Марка автомобиля</label>
+                <select name="carBrend" id="carBrend">
+                    <option value="jaguar"> Jaguar</option>
+                    <option value="hyundai">Hyundai</option>
+                    <option value="reno">Reno</option>
+                    <option value="mazda">Mazda</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="carModel">Модель автомобиля</label>
+                <select name="carModel" id="carModel">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value="">
+                    <option>
+                    <option value=""></option>
+                </select>
+            </div>
+
+            <div>
+                <p>Тип топлива:</p>
+                <label for="petrol">Бензин</label>
+                <input type="radio" name="petrol" id="petrol" value="petrolVal"><br>
+
+                <label for="diesel">Дизель</label>
+                <input type="radio" name="diesel " id="diesel" value="dieselVal"><br>
+
+                <label for="gas">Газ</label>
+                <input type="radio" name="gas" id="gas" value="gasVal"><br>
+
+                <label for="electric">Электричество</label>
+                <input type="radio" name="electric" id="electric" value="electricVal"><br>
+
+
+            </div>
+            <div>
+                <label for="enСapacity">Объём двигателя</label>
+                <input type="text" name="enСapacity" id="enСapacity" placeholder="от 1.1 литра до 3.5 литров">
+            </div>
+
+            <div>
+                <p>Состояние автомобиля</p>
+                <label for="newCar">Новый</label>
+                <input type="radio" name="newCar" id="newCar" value="newCarVal"><br>
+
+                <label for="suppСar">Поддержаный</label>
+                <input type="radio" name="suppСar" id="suppСar" value="suppСarVal"><br>
+
+
+            </div>
+
+            <div class="carOwner"></div>
+
+            <div>
+                <p>Желаемый способ оплаты</p>
+                <label for="bankСard">Карта</label>
+                <input type="radio" name="bankСard" id="bankСard" value="bankСardVal"><br>
+
+                <label for="cash">Наличные</label>
+                <input type="radio" name="cash" id="cash" value="cashVal"><br>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
