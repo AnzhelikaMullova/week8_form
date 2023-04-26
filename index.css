@@ -14,3 +14,10 @@
     display: flex;
     justify-content: space-around;
 }
+button{
+    background-color: red;
+    width: 130px;
+    height: 80px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
