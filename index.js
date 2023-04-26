@@ -13,6 +13,48 @@ let elemBankСard = myForms.elements.bankСard; // оплата картой
 let button = document.querySelector(".button"); // нашла кнопку "расчитать стоимость"
 let carOwner = document.querySelector(".carOwner"); // нашла див с количеством владельцев
 
+function onChangeFirst() {  //функцияп подгружает дополнительный массив
+    const value = document.getElementById('carBrend').value;
+    
+    const jaguar = ['FX','XJ','XE'];
+    const hyundai = ['Creta','Solaris','tucson'];
+    const reno = ['Kaptur','Koleos','Symbol'];
+    const mazda = ['CX-3','CX-5','MX-30'];
+
+    let values=[]
+
+    document.getElementById("carModel").innerHTML=''
+    if(value==0){
+        document.getElementById('carModel').value=''
+        document.getElementById("carModel").disabled = true;
+        return
+      }
+      else if(value == 1){
+
+    values = [...jaguar];    
+    }
+    else if(value == 2){
+      values = [...hyundai]
+    }
+    else if(value == 3){
+      values = [...reno]
+    }
+    else if(value == 4){
+        values = [...mazda]
+      }
+     
+    let select = document.getElementById('carModel');
+
+    for (const val of values)
+    {
+        let option = document.createElement("option");
+        option.value = val;
+        option.text = val;
+        select.appendChild(option);
+    }
+    document.getElementById('carModel').disabled=false
+}
+
 
 function addcarOwner(){ //проверяем условие если авто поддержанное то появляются родиокнопки и количеством владельцев
 
@@ -27,7 +69,8 @@ if(elemSuppСar.value !=="")
 elemSuppСar.addEventListener('input', function (evt) {
     evt.preventDefault();
     addcarOwner();
-  });
+});
+
 
 
 

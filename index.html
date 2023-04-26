@@ -15,23 +15,18 @@
         <form name="myForm" class="form">
             <div>
                 <label for="carBrend">Марка автомобиля</label>
-                <select name="carBrend" id="carBrend">
-                    <option value="jaguar"> Jaguar</option>
-                    <option value="hyundai">Hyundai</option>
-                    <option value="reno">Reno</option>
-                    <option value="mazda">Mazda</option>
+                <select name="carBrend" id="carBrend" onchange=onChangeFirst()>
+                    <option value="0">Выберите автомобиль</option>
+                    <option value="1"> Jaguar</option>
+                    <option value="2">Hyundai</option>
+                    <option value="3">Reno</option>
+                    <option value="4">Mazda</option>
                 </select>
             </div>
 
             <div>
                 <label for="carModel">Модель автомобиля</label>
-                <select name="carModel" id="carModel">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value="">
-                    <option>
-                    <option value=""></option>
-                </select>
+                <select id="carModel" name="carModel" onchange=onChangeSecond() disabled></select>
             </div>
 
             <div>
