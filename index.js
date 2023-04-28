@@ -32,16 +32,31 @@ myForms.addEventListener("submit", function(event) {
     let newCar =document.querySelector("#newCar").value;
     let suppСar =document.querySelector("#suppСar").value;
 
-    sum =  sum + model;
+    sum =  sum + +model;
     console.log(sum);
 
+if ( petrol !== "" ) {
+     sum = sum + +petrol;
+  console.log(sum);
+  } 
+  else
+  if (diesel !== "") {
+    sum = sum + +diesel;
+  console.log(sum);
+}
 
- });
+
+
+  
+  
+  
+}
+);
 
 
 
 
-function onChangeFirst() {  //функцияп подгружает дополнительный массив
+function onChangeFirst() {  //функция подгружает дополнительный массив
     const value = document.getElementById('carBrend').value;
     
     const jaguar = [{ model:'FX', price: 100000 } , {model: 'XJ', price: 150000 },{model:'XE', price: 300000 }];
