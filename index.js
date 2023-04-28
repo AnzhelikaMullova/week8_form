@@ -19,7 +19,15 @@ let carOwner = document.querySelector(".carOwner"); // нашла див с ко
   button.addEventListener('cliсk', function () {
     let brend =document.querySelector("#carBrend").value; 
     let model =document.querySelector("#carModel").value;
-  
+    let petrol =document.querySelector("#petrol").value;
+    let diesel =document.querySelector("#diesel").value;
+    let gas =document.querySelector("#gas").value;
+    let electric =document.querySelector("#electric").value;
+    let enСapacity =document.querySelector("#enСapacity").value;
+    let newCar =document.querySelector("#newCar").value;
+    let suppСar =document.querySelector("#suppСar").value;
+    
+   
   });
 
 
@@ -77,7 +85,7 @@ function addcarOwner(){ //проверяем условие если авто п
 
 if(elemSuppСar.value !=="") 
 {
-    const newCarOwner = `<div><p>1-2 владельца</p><input type="radio"></div>`;
+    const newCarOwner = `<div><p>1-2 владельца</p><input  type="radio"></div>`;
     const toCarOwner = `<div><p>3 и более владельцев</p><input type="radio"></div>`;
     carOwner.insertAdjacentHTML('beforeEnd', newCarOwner);
     carOwner.insertAdjacentHTML('beforeEnd', toCarOwner);
