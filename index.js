@@ -16,9 +16,11 @@ let carOwner = document.querySelector(".carOwner"); // нашла див с ко
 
 
 
-  button.addEventListener('cliсk', function () {
-   
-    let sum =0;
+
+myForms.addEventListener("submit", function(event) {
+   event.preventDefault();
+
+   let sum =0;
 
     let brend =document.querySelector("#carBrend").value; 
     let model =document.querySelector("#carModel").value;
@@ -30,18 +32,11 @@ let carOwner = document.querySelector(".carOwner"); // нашла див с ко
     let newCar =document.querySelector("#newCar").value;
     let suppСar =document.querySelector("#suppСar").value;
 
-    sum = sum + model;
+    sum =  sum + model;
     console.log(sum);
 
-    
-   
-  });
 
-
-   myForms.addEventListener("submit", function(event) {
-    event.preventDefault();
-  });
-
+ });
 
 
 
