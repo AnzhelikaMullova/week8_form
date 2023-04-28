@@ -17,6 +17,9 @@ let carOwner = document.querySelector(".carOwner"); // нашла див с ко
 
 
   button.addEventListener('cliсk', function () {
+   
+    let sum =0;
+
     let brend =document.querySelector("#carBrend").value; 
     let model =document.querySelector("#carModel").value;
     let petrol =document.querySelector("#petrol").value;
@@ -26,12 +29,18 @@ let carOwner = document.querySelector(".carOwner"); // нашла див с ко
     let enСapacity =document.querySelector("#enСapacity").value;
     let newCar =document.querySelector("#newCar").value;
     let suppСar =document.querySelector("#suppСar").value;
+
+    sum = sum + model;
+    console.log(sum);
+
     
    
   });
 
 
-
+   myForms.addEventListener("submit", function(event) {
+    event.preventDefault();
+  });
 
 
 
@@ -53,17 +62,17 @@ function onChangeFirst() {  //функцияп подгружает дополн
         document.getElementById("carModel").disabled = true;
         return
       }
-      else if(value == 500000){
+      else if(value == 1){
 
     values = [...jaguar];    
     }
-    else if(value == 200000){
+    else if(value == 2){
       values = [...hyundai]
     }
-    else if(value == 100000){
+    else if(value == 3){
       values = [...reno]
     }
-    else if(value == 400000){
+    else if(value == 4){
         values = [...mazda]
       }
      
