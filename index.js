@@ -13,7 +13,7 @@ let elemСash = myForms.elements.cash.checked; // оплата картой
 
 let button = document.querySelector(".button"); // нашла кнопку "расчитать стоимость"
 let carOwner = document.querySelector(".carOwner"); // нашла див с количеством владельцев
-let sum = document.querySelector(".sum");
+let totalAm = document.querySelector(".sum");
 
 
 
@@ -66,9 +66,20 @@ myForms.addEventListener("submit", function(event) {
       console.log(sum);
     }
   
-    console.log(sum = ${sum});
+    // console.log(sum = ${sum});
 
+ 
+    if (newCar.checked && newCarVal) {
+      sum = sum + +newCarVal;
+      console.log(sum);
+    }
+    
+     if (suppСar.checked && suppСarVal) {
+      sum = sum + +suppСarVal;
+      console.log(sum);
+    } 
 
+     totalAm.textContent = sum;
 
 
 });
