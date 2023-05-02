@@ -13,6 +13,7 @@ let elemСash = myForms.elements.cash.checked; // оплата картой
 
 let button = document.querySelector(".button"); // нашла кнопку "расчитать стоимость"
 let carOwner = document.querySelector(".carOwner"); // нашла див с количеством владельцев
+let sum = document.querySelector(".sum");
 
 
 
@@ -40,23 +41,21 @@ myForms.addEventListener("submit", function(event) {
     sum =  sum + +model;
     console.log(sum);
     
-
-
 if ( petrolVal !== "" ) {
-     sum = sum + +petrol;
+      sum = sum + +petrolVal;
   console.log(sum);
   } 
   else if (dieselVal !== "") {
-    sum = sum + +diesel;
+    sum = sum + +dieselVal;
   console.log(sum);
 }
 else
 if (gasVal !== "") {
-  sum = sum + +gas;
+  sum = sum + +gasVal;
 console.log(sum);
 }
 else{
-  sum = sum + +electricVal;
+   sum = sum + +electricVal;
   console.log(sum);
 }
 
