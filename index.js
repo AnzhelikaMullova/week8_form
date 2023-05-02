@@ -21,46 +21,36 @@ let sum = document.querySelector(".sum");
 myForms.addEventListener("submit", function(event) {
    event.preventDefault();
 
+
+let elemPetrol = myForms.elements.fuel.value;   //элемент инпута со значением "Бензин"
+let elemDiesel = myForms.elements.fuel.value;  //элемент инпута со значением "Дизель"
+let elemGas = myForms.elements.fuel.value;        //элемент инпута со значением "Газ"
+let elemElectric = myForms.elements.fuel.value;  
+
    let sum =0;
 
-    let brend =document.querySelector("#carBrend"); 
-    let model =document.querySelector("#carModel").value;
-    let petrol =document.querySelector("#petrol");
-    let diesel =document.querySelector("#diesel");
-    let gas =document.querySelector("#gas");
-    let electric =document.querySelector("#electric");
-    let enСapacity =document.querySelector("#enСapacity").value;
-    let newCar =document.querySelector("#newCar");
-    let suppСar =document.querySelector("#suppСar");
-
-    let petrolVal = petrol.value;
-    let dieselVal = diesel.value;
-    let gasVal =gas.value;
-    let electricVal = electric.value;
-    let newCarVal = newCar.value;
-    let suppСarVal = suppСar.value;
 
 
 
 
-    sum =  sum + +model;
+    sum =  sum + +elemCarModel;
     console.log(sum);
     
-if ( petrolVal !== " " ) {
-      sum = sum + +petrolVal;
+if ( elemPetrol !== " " ) {
+      sum = sum + +elemPetrol;
   console.log(sum);
   } 
-  else if (dieselVal !== "") {
-    sum = sum + +dieselVal;
+  else if (elemDiesel !== "") {
+    sum = sum + +elemDiesel;
   console.log(sum);
 }
 else
-if (gasVal !== "") {
-  sum = sum + +gasVal;
+if (gelemGas!== "") {
+  sum = sum + +elemGas;
 console.log(sum);
 }
 else{
-   sum = sum + +electricVal;
+   sum = sum + +elemElectric;
   console.log(sum);
 }
 
@@ -148,6 +138,23 @@ elemSuppСar.addEventListener('input', function (evt) {
 
 
 
+
+    // let brend =document.querySelector("#carBrend"); 
+    // let model =document.querySelector("#carModel").value;
+    // let petrol =document.querySelector("#petrol");
+    // let diesel =document.querySelector("#diesel");
+    // let gas =document.querySelector("#gas");
+    // let electric =document.querySelector("#electric");
+    // let enСapacity =document.querySelector("#enСapacity").value;
+    // let newCar =document.querySelector("#newCar");
+    // let suppСar =document.querySelector("#suppСar");
+
+    // let petrolVal = petrol.value;
+    // let dieselVal = diesel.value;
+    // let gasVal =gas.value;
+    // let electricVal = electric.value;
+    // let newCarVal = newCar.value;
+    // let suppСarVal = suppСar.value;
 
 
 
