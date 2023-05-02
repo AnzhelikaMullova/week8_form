@@ -1,10 +1,10 @@
 let myForms = document.forms.myForm;    //нашли форму
 let elemCarBrend = myForms.elements.carBrend.value;     //нашла элемент бренда автомобиля,без значения
 let elemCarModel = myForms.elements.carModel.value;   // элемент марки автомобиля
-let elemPetrol = myForms.elements.petrol.value;   //элемент инпута со значением "Бензин"
-let elemDiesel = myForms.elements.diesel.value;  //элемент инпута со значением "Дизель"
-let elemGas = myForms.elements.gas.value;        //элемент инпута со значением "Газ"
-let elemElectric = myForms.elements.electric.value;    //элемент инпута со значением "Электричество"
+let elemPetrol = myForms.elements.fuel.value;   //элемент инпута со значением "Бензин"
+let elemDiesel = myForms.elements.fuel.value;  //элемент инпута со значением "Дизель"
+let elemGas = myForms.elements.fuel.value;        //элемент инпута со значением "Газ"
+let elemElectric = myForms.elements.fuel.value;    //элемент инпута со значением "Электричество"
 let elemEnСapacity = myForms.elements.enСapacity.value;    // элемент обьема двигателя
 let elemNewCar = myForms.elements.newCar.checked;   // элемент нового автомобиля
 let elemSuppСar = myForms.elements.suppСar;  //элемент поддержанного автомобиля
@@ -30,18 +30,23 @@ myForms.addEventListener("submit", function(event) {
     let gas =document.querySelector("#gas");
     let electric =document.querySelector("#electric");
     let enСapacity =document.querySelector("#enСapacity").value;
-    let newCar =document.querySelector("#newCar").value;
-    let suppСar =document.querySelector("#suppСar").value;
+    let newCar =document.querySelector("#newCar");
+    let suppСar =document.querySelector("#suppСar");
 
     let petrolVal = petrol.value;
     let dieselVal = diesel.value;
     let gasVal =gas.value;
     let electricVal = electric.value;
+    let newCarVal = newCar.value;
+    let suppСarVal = suppСar.value;
+
+
+
 
     sum =  sum + +model;
     console.log(sum);
     
-if ( petrolVal !== "" ) {
+if ( petrolVal !== " " ) {
       sum = sum + +petrolVal;
   console.log(sum);
   } 
@@ -58,6 +63,19 @@ else{
    sum = sum + +electricVal;
   console.log(sum);
 }
+
+
+
+// if ( newCarVal !== "" ) {
+//   sum = sum + +newCarVal;
+// console.log(sum);
+// } 
+// else (suppСarVal !== "") 
+// {
+// sum = sum + +suppСarVal;
+// console.log(sum);
+// }
+
 
 });
 
