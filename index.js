@@ -59,10 +59,6 @@ else{
   console.log(sum);
 }
 
-
-
-
-
 });
 
 
