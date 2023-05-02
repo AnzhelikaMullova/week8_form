@@ -37,6 +37,7 @@ myForms.addEventListener("submit", function(event) {
    let dieselVal = diesel.value;
    let gasVal =gas.value;
    let electricVal = electric.value;
+
    let newCarVal = newCar.value;
    let suppСarVal = suppСar.value;
 
@@ -44,38 +45,30 @@ myForms.addEventListener("submit", function(event) {
 
    let sum =0;
 
-    sum =  sum + +model;
+ sum =  sum + +model;
     console.log(sum);
     
-if ( petrolVal !== " " ) {
+    if (petrol.checked && petrolVal) {
       sum = sum + +petrolVal;
-  console.log(sum);
-  } 
-  else if (dieselVal !== "") {
-    sum = sum + +dieselVal;
-  console.log(sum);
-}
-else
-if (gasVal!== "") {
-  sum = sum + +gasVal;
-console.log(sum);
-}
-else{
-   sum = sum + +electricVal;
-  console.log(sum);
-}
+      console.log(sum);
+    }
+    
+     if (diesel.checked && dieselVal) {
+      sum = sum + +dieselVal;
+      console.log(sum);
+    } 
+     if (gas.checked && gasVal) {
+      sum = sum + +gasVal;
+      console.log(sum);
+    } 
+    if(electric.checked && electricVal) {
+      sum = sum + +electricVal;
+      console.log(sum);
+    }
+  
+    console.log(sum = ${sum});
 
 
-
-// if ( newCarVal !== "" ) {
-//   sum = sum + +newCarVal;
-// console.log(sum);
-// } 
-// else (suppСarVal !== "") 
-// {
-// sum = sum + +suppСarVal;
-// console.log(sum);
-// }
 
 
 });
