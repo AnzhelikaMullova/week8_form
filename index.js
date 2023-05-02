@@ -22,36 +22,49 @@ myForms.addEventListener("submit", function(event) {
 
    let sum =0;
 
-    let brend =document.querySelector("#carBrend").value; 
+    let brend =document.querySelector("#carBrend"); 
     let model =document.querySelector("#carModel").value;
-    let petrol =document.querySelector("#petrol").value;
-    let diesel =document.querySelector("#diesel").value;
-    let gas =document.querySelector("#gas").value;
-    let electric =document.querySelector("#electric").value;
+    let petrol =document.querySelector("#petrol");
+    let diesel =document.querySelector("#diesel");
+    let gas =document.querySelector("#gas");
+    let electric =document.querySelector("#electric");
     let enСapacity =document.querySelector("#enСapacity").value;
     let newCar =document.querySelector("#newCar").value;
     let suppСar =document.querySelector("#suppСar").value;
 
+    let petrolVal = petrol.value;
+    let dieselVal = diesel.value;
+    let gasVal =gas.value;
+    let electricVal = electric.value;
+
     sum =  sum + +model;
     console.log(sum);
+    
 
-if ( petrol !== "" ) {
+
+if ( petrolVal !== "" ) {
      sum = sum + +petrol;
   console.log(sum);
   } 
-  else
-  if (diesel !== "") {
+  else if (dieselVal !== "") {
     sum = sum + +diesel;
+  console.log(sum);
+}
+else
+if (gasVal !== "") {
+  sum = sum + +gas;
+console.log(sum);
+}
+else{
+  sum = sum + +electricVal;
   console.log(sum);
 }
 
 
 
-  
-  
-  
-}
-);
+
+
+});
 
 
 
