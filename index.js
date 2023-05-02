@@ -44,28 +44,24 @@ myForms.addEventListener("submit", function(event) {
 
    let sum =0;
 
-
-
-
-
     sum =  sum + +model;
     console.log(sum);
     
-if ( elemPetrol !== " " ) {
-      sum = sum + +elemPetrol;
+if ( petrolVal !== " " ) {
+      sum = sum + +petrolVal;
   console.log(sum);
   } 
-  else if (elemDiesel !== "") {
-    sum = sum + +elemDiesel;
+  else if (dieselVal !== "") {
+    sum = sum + +dieselVal;
   console.log(sum);
 }
 else
-if (gelemGas!== "") {
-  sum = sum + +elemGas;
+if (gasVal!== "") {
+  sum = sum + +gasVal;
 console.log(sum);
 }
 else{
-   sum = sum + +elemElectric;
+   sum = sum + +electricVal;
   console.log(sum);
 }
 
