@@ -18,7 +18,7 @@ let totalAm = document.querySelector(".sum");
 
 
 
-myForms.addEventListener("submit", function(event) {
+myForms.addEventListener("submit", function(event) { //основная функция
    event.preventDefault();
 
 
